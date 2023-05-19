@@ -1,14 +1,27 @@
-﻿Console.Clear();
-// // Console.SetCursorPosition(10, 4); // (x, y)
-// // Console.WriteLine("+");
+﻿// Задача 1. Задача с собакой и друзьями 
+// Условие 
+// Два друга движутся 
+// навстречу с заданной скоростью. 
+// Скорость первого — 1 м/с, второго — 2 м/с. 
+// У них есть собака, которая бегает со скоростью 5 м/с. 
+// Когда друзья начинают свой путь, собака бежит от одного друга 
+// к другому, добегает, разворачивается и тут же бежит обратно. 
+// Сколько раз собака перебежит от одного друга к другому, 
+// пока они не встретятся? Введение в программирование | 
+// Лекция 1 Решить с конкретными числами Решить в общем виде
 
-// введём обзначения 
-int firstSpeedFriend = 1;
-int secondSpeedFriend = 2;
-int dogSpeed = 5;
-int distans = 100;
-int friend = 2;
-int count = 0;
+
+// Решение 1: 
+
+// Console.Clear();
+
+// // введём обзначения 
+// int firstSpeedFriend = 1;
+// int secondSpeedFriend = 2;
+// int dogSpeed = 5;
+// int distans = 100;
+// int friend = 2;
+// int count = 0;
 
 // // Найдём скрость сближения двух друзей
 
@@ -30,6 +43,20 @@ int count = 0;
 // int resultDog = dogS / time;
 // Console.WriteLine("Это сколько раз пробежала собака между друзьями =  " + resultDog + " раз");
 
+
+
+
+// Решение 2 
+
+Console.Clear();
+
+// введём обзначения 
+int firstSpeedFriend = 1;
+int secondSpeedFriend = 2;
+int dogSpeed = 5;
+int distans = 100;
+int friend = 2;
+int count = 0;
 
 
 // Найдём скрость сближения двух друзей
@@ -62,6 +89,6 @@ while (distans == 100)
     }
 
 
-    Console.WriteLine("Это сколько раз пробежала собака между друзьями = " + distans);
+    Console.WriteLine("Собака пробежала между друзьями = " + distans + " раз");
     count++;
 }
