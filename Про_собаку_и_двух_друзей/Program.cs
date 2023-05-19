@@ -48,47 +48,49 @@
 
 // Решение 2 
 
-Console.Clear();
+// Console.Clear();
 
-// введём обзначения 
-int firstSpeedFriend = 1;
-int secondSpeedFriend = 2;
-int dogSpeed = 5;
-int distans = 100;
-int friend = 2;
-int count = 0;
+// // введём обзначения 
+// int firstSpeedFriend = 1;
+// int secondSpeedFriend = 2;
+// int dogSpeed = 5;
+// int distans = 100;
+// int friend = 2;
+// int count = 0;
 
 
-// Найдём скрость сближения двух друзей
+// // Найдём скрость сближения двух друзей
 
-int SpeedOfApproach = secondSpeedFriend - firstSpeedFriend;
-Console.WriteLine("Скорость сближения двух друзей =  " + SpeedOfApproach + " м/с");
+// int SpeedOfApproach = secondSpeedFriend - firstSpeedFriend;
+// Console.WriteLine("Скорость сближения двух друзей =  " + SpeedOfApproach + " м/с");
 
-//  Найдём время через которое два друга втстретятся 
+// //  Найдём время через которое два друга втстретятся 
 
-int time = distans / SpeedOfApproach;
-Console.WriteLine("Время через которое два друга встретятся =  " + time + " сек");
+// int time = distans / SpeedOfApproach;
+// Console.WriteLine("Время через которое два друга встретятся =  " + time + " сек");
 
-//  Теперь найдём расстояние, которое пробежала собака 
+// //  Теперь найдём расстояние, которое пробежала собака 
 
-int dogS = dogSpeed * time;
-Console.WriteLine("Растояние, которое пробежала собака =  " + dogS + " м");
+// int dogS = dogSpeed * time;
+// Console.WriteLine("Растояние, которое пробежала собака =  " + dogS + " м");
 
-// Теперь найдём сколько именно раз пробежала раз 
+// // Теперь найдём сколько именно раз пробежала раз 
 
-while (distans == 100)
-{
-    if (firstSpeedFriend == 1)
-    {
-        distans = dogS - (SpeedOfApproach * time);
-    }
+// while (distans == 10)
+// {
+//     if (friend == 1)
+//     {
+//         distans = dogS - (SpeedOfApproach * time);
+//     }
     
-    if (secondSpeedFriend == 2)
-    {
-        distans = dogS - (SpeedOfApproach * time);
-    }
+//     if (friend == 2)
+//     {
+//         distans = dogS - (SpeedOfApproach * time);
+//     }
 
 
-    Console.WriteLine("Собака пробежала между друзьями = " + distans + " раз");
-    count++;
-}
+//     Console.WriteLine("Собака пробежала между друзьями = " + distans + " раз");
+//     count++;
+// }
+
+
