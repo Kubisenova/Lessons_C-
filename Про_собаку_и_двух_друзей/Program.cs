@@ -54,7 +54,7 @@ Console.Clear();
 int firstSpeedFriend = 1;
 int secondSpeedFriend = 2;
 int dogSpeed = 5;
-int distans = 100;
+int distans = 1000;
 int friend = 2;
 int count = 0;
 
@@ -76,17 +76,17 @@ Console.WriteLine("Растояние, которое пробежала соб�
 
 // Теперь найдём сколько именно раз пробежала собака
 
-while (distans == 10)
+while (distans == 1000)
 {
     if (friend == 1)
     {
-        distans = dogS - (SpeedOfApproach / time);
-        count++;
+        distans = distans - (SpeedOfApproach * time);
+        
     }
 
     if (friend == 2)
     {
-        distans = dogS - (SpeedOfApproach / time);
+        distans = distans - (SpeedOfApproach * time);
     }
 
     count++;
