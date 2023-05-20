@@ -145,11 +145,19 @@ while (distans < 10)
 {
     if (friend == 1)
     {
-        int time = distans / (firstSpeedFriend + secondSpeedFriend);
+        int time = distans / (firstSpeedFriend + dogSpeed);
         distans = distans * time;
         count++;
     }
 
+    if (friend == 2)
+    {
+        int time = distans / (secondSpeedFriend + dogSpeed);
+        distans = distans * time;
+        count++;
+    }
+
+    count++;
     Console.WriteLine("Собака пробежала между друзьями = " + count + " раз");
 
 }
