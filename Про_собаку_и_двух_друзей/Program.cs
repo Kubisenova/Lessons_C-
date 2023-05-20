@@ -50,7 +50,7 @@
 
 // Console.Clear();
 
-// введём обзначения 
+// // введём обзначения 
 // int firstSpeedFriend = 1;
 // int secondSpeedFriend = 2;
 // int dogSpeed = 5;
@@ -83,7 +83,7 @@
 //         distans = distans - (SpeedOfApproach * time);
 
 //     }
-
+//     count++;
 //     if (friend == 2)
 //     {
 //         distans = distans - (SpeedOfApproach * time);
@@ -97,7 +97,40 @@
 
 
 
-// Решение 3
+// // Решение 3
+
+// Console.Clear();
+
+// int firstSpeedFriend = 1;
+// int secondSpeedFriend = 2;
+// int dogSpeed = 5;
+// int distans = 100;
+// int friend = 2;
+// int count = 0;
+
+// while (distans < 10)
+// {
+//     if (friend == 1)
+
+//     {
+//         int time2 = distans / (secondSpeedFriend + dogSpeed);
+//         distans = distans - (secondSpeedFriend + dogSpeed) * time2;
+//         count++;
+//     }
+
+//     if (friend == 2)
+//     {
+//         int time1 = distans / (firstSpeedFriend + dogSpeed);
+//         distans = distans - (firstSpeedFriend + dogSpeed) * time1;
+//         count++;
+//     }
+//     count++;
+
+//     Console.WriteLine("Собака пробежала между друзьями = " + count + " раз");
+// }
+
+
+// Решение 4
 
 Console.Clear();
 
@@ -111,20 +144,13 @@ int count = 0;
 while (distans < 10)
 {
     if (friend == 1)
-
     {
-        int time2 = distans / (secondSpeedFriend + dogSpeed);
-        distans = distans - (secondSpeedFriend + dogSpeed) * time2;
+        int time = distans / (firstSpeedFriend + secondSpeedFriend);
+        distans = distans * time;
         count++;
     }
-
-    if (friend == 2)
-    {
-        int time1 = distans / (firstSpeedFriend + dogSpeed);
-        distans = distans - (firstSpeedFriend + dogSpeed) * time1;
-        count++;
-    }
-    count++;
 
     Console.WriteLine("Собака пробежала между друзьями = " + count + " раз");
+
 }
+
