@@ -141,19 +141,27 @@ int distans = 100;
 int friend = 2;
 int count = 0;
 
+// Время первого друга
+int time1Friend = distans / firstSpeedFriend;
+// Время второго друга 
+int time2Friend = distans / secondSpeedFriend;
+
+// Растояние первого друга до собаки
+int dis1Friend = firstSpeedFriend * time1Friend;
+// Растояние второго друга до собаки
+int dis2Friend = secondSpeedFriend * time2Friend;
+
 while (distans < 10)
 {
     if (friend == 1)
     {
-        int time = distans / (firstSpeedFriend + dogSpeed);
-        distans = distans * time;
+        distans = distans - (dis1Friend / dogSpeed);
         count++;
     }
 
     if (friend == 2)
     {
-        int time = distans / (secondSpeedFriend + dogSpeed);
-        distans = distans * time;
+        distans = distans - (dis2Friend / dogSpeed);
         count++;
     }
 
