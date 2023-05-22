@@ -130,7 +130,85 @@
 // }
 
 
-// Решение 4
+// // Решение 4 (1 часть моя, а вторая часть преподавателя Констанина)
+
+// Console.Clear();
+
+// int firstSpeedFriend = 1;
+// int secondSpeedFriend = 2;
+// int dogSpeed = 5;
+// int distans = 100;
+// int friend = 2;
+// int count = 0;
+
+// // Время первого друга
+// int time1Friend = distans / firstSpeedFriend;
+// // Время второго друга 
+// int time2Friend = distans / secondSpeedFriend;
+
+// // Растояние первого друга до собаки
+// int dis1Friend = firstSpeedFriend * time1Friend;
+// // Растояние второго друга до собаки
+// int dis2Friend = secondSpeedFriend * time2Friend;
+
+// while (distans < 10)
+// {
+//     if (friend == 1)
+//     {
+//         distans = distans - (dis1Friend / dogSpeed);
+//         count++;
+//     }
+
+//     if (friend == 2)
+//     {
+//         distans = distans - (dis2Friend / dogSpeed);
+//         count++;
+//     }
+
+//     count++;
+//     Console.WriteLine("Собака пробежала между друзьями = " + count + " раз");
+
+// }
+
+//  задаче с собакой и друзьями я вижу такое решение 
+// (детали могут быть неверными, основано на 4 способе)
+
+// // Продолжаем пока дистанция больше нуля (пока друзья не подошли друг к другу)
+// while (distans > 0)
+// {
+//     if (friend == 1)
+//     {
+//         distans = distans - (dis1Friend / dogSpeed);
+//         // убираем count++, потому что увеличиваем его 
+//         // один раз в самом конце цикла while
+
+//         // обозначаем, что собака бежит к другому другу
+//         friend = 2;
+//     }
+
+//     if (friend == 2)
+//     {
+//         distans = distans - (dis2Friend / dogSpeed);
+//         // убираем count++, потому что увеличиваем его один раз в самом конце цикла while
+
+//         // обозначаем, что собака бежит к другому другу
+//         friend = 1;
+//     }
+//     count++;
+// }
+// // вывод в консоль происходит уже после цикла и после всех подсчётов
+// Console.WriteLine("Собака пробежала между друзьями = " + count + " раз");
+
+
+
+
+
+
+
+
+// Решение 4 
+//  (1 часть моя, а вторая часть преподавателя Констанина) 
+//  - оформление нормальное
 
 Console.Clear();
 
@@ -141,32 +219,24 @@ int distans = 100;
 int friend = 2;
 int count = 0;
 
-// Время первого друга
 int time1Friend = distans / firstSpeedFriend;
-// Время второго друга 
 int time2Friend = distans / secondSpeedFriend;
-
-// Растояние первого друга до собаки
 int dis1Friend = firstSpeedFriend * time1Friend;
-// Растояние второго друга до собаки
 int dis2Friend = secondSpeedFriend * time2Friend;
 
-while (distans < 10)
+while (distans > 0)
 {
     if (friend == 1)
     {
         distans = distans - (dis1Friend / dogSpeed);
-        count++;
+        friend = 2;
     }
-
     if (friend == 2)
     {
         distans = distans - (dis2Friend / dogSpeed);
-        count++;
+        friend = 1;
     }
-
     count++;
-    Console.WriteLine("Собака пробежала между друзьями = " + count + " раз");
-
 }
+Console.WriteLine("Собака пробежала между друзьями = " + count + " раз");
 
