@@ -215,7 +215,7 @@ Console.Clear();
 int firstSpeedFriend = 1;
 int secondSpeedFriend = 2;
 int dogSpeed = 5;
-int distans = 100;
+int distans = 10000;
 int friend = 2;
 int count = 0;
 
@@ -229,12 +229,12 @@ while (distans > 0)
     if (friend == 1)
     {
         distans = distans - (dis1Friend / dogSpeed);
-        friend = 2;
+        // friend = 2;
     }
     if (friend == 2)
     {
         distans = distans - (dis2Friend / dogSpeed);
-        friend = 1;
+        // friend = 1;
     }
     count++;
 }
